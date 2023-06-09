@@ -9,15 +9,15 @@ summary(mydata) # summary statistics of the dataset
 str(mydata) # structure of the dataset
 dim(mydata) # dimensions of the dataset
 View(mydata) #View your dataset on R environment
-nrow(mydata)
-ncol(mydata)
-colnames(mydata)
-row.names(mydata)
+nrow(mydata) #Know the number of rows
+ncol(mydata) #Know the number of columns
+colnames(mydata) #Know the names of columns
+row.names(mydata) #Know the name of rows
 
 #cleaning data
 
-mydata$height<-gsub("“","",mydata$height)
-mydata$height<-gsub("�" , "",mydata$height)
+mydata$height<-gsub("â€œ","",mydata$height)
+mydata$height<-gsub("â€" , "",mydata$height)
 View(mydata)
 
 # convert data types
