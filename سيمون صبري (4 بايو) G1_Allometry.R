@@ -108,7 +108,7 @@ bar1 + geom_bar() + theme_light()+labs(y="The Count",
 
 #Data visualizing using ScatterBlot
 
-scatter1<-ggplot(mydata, aes(species,leafarea))
+scatter1<-ggplot(mydata, aes(diameter,leafarea))
 scatter1+ geom_point(aes(color=species),fill="white")+
   theme_light()+ stat_smooth(se=FALSE)
 
